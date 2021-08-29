@@ -1,6 +1,3 @@
-// "https://api.openweathermap.org/data/2.5/weather?q=dhaka&appid=931bf1e9927b32abbd7b0567f0dfd883"
-
-
 const loadData = () => {
     // collecting city name
     const cityName = document.getElementById("location-value");
@@ -8,7 +5,7 @@ const loadData = () => {
     cityName.value = "";
 
     // fetching api data
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=931bf1e9927b32abbd7b0567f0dfd883`)
+    fetch(`api.openweathermap.org`)
         .then(res => res.json())
         .then(data => weatherDetails(data));
 }
