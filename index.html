@@ -12,33 +12,36 @@
 
     <!-- fav icon -->
     <link rel="shortcut icon" href="images/favicon.ico">
-    <style>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
         body {
             background: url(images/bg-image.jpg) no-repeat;
             background-size: cover;
-            height: 100vh;
+            height: 100%;
         }
         p{
-            margin-top: 500px;
+            margin-top: 300px;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
     <div class="container">
-        <form class="col-md-6 m-auto py-5">
-            <div class="input-group mb-3">
-                <input id="location-value" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+        <div class="col-md-5 py-5 form">
+            <div class="input-group mb-3 search-field">
+                <input id="location-value" type="text" class="form-control search-input " placeholder="Enter a location for Weather...">
                 <div class="input-group-append">
-                    <button onclick="loadData()" type="button" class="btn btn-danger">Search</button>
+                    <button onclick="loadData()" id="load-Data" type="button" class="btn btn-dark">Search</button>
                 </div>
             </div>
-        </form>
-        <div id="weather-status" class="weather-status text-white text-center">
+        </div>
+        <div id="weather-status" class="weather-status text-white text-center m-5 p-5">
         </div>
     </div>
 
-<p class="text-warning container text-center">Developed by <strong class="text-white"> &copy Sheikh Mohammad Rifat</strong> 2021</p>
+<!-- <p class="text-white container text-center">Developed by <strong class="text-dark"> &copy Sheikh Mohammad Rifat</strong> 2021</p> -->
     <script src="script.js"></script>
 </body>
 
